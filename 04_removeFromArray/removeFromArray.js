@@ -1,16 +1,9 @@
 const removeFromArray = function(array, value) {
-
-    var arr = array;
-    
-    for( var i = 0; i < arr.length; i++){ 
-                                   
-        if ( arr[i] == value) { 
-            arr.splice(i, 1); 
-            i--; 
-        }
+    const index = array.indexOf(value);
+    if (index > -1) {
+        array.splice(index, 1);
     }
-    return arr;
-
+    return array;
 }
 
 // Do not edit below this line
